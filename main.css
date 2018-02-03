@@ -1,3 +1,25 @@
 /*
   Start adding CSS here
 */
+
+body {
+  font-family: sans-serif;
+}
+
+table {
+  padding: 5px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+
+th > a {
+  text-decoration: none;
+}
+
+.currentColumn {
+  background: #eee;
+}
