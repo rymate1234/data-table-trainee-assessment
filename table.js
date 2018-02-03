@@ -24,7 +24,7 @@ class Table {
         if (this.htmlTable != null) {
             this.htmlTable.empty();
         } else {
-            this.htmlTable = $("<table>");
+            this.htmlTable = $("#dataTable");
         }
 
         var tableHeader = $("<thead>").append(this.generateHeaders());
@@ -35,8 +35,6 @@ class Table {
             tableBody.append(this.generateRow(item));
         }
         this.htmlTable.append(tableBody);
-
-        $("body").append(this.htmlTable);
     }
 
     // contains the logic for setting the currently sorted column and the sorting

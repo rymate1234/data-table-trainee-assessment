@@ -4,20 +4,27 @@
 
 body {
   font-family: sans-serif;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 5px;
 }
 
 table {
-  padding: 5px;
+  width: 100%;
   border-collapse: collapse;
 }
 
 th, td {
-  padding: 10px;
   border: 1px solid #aaa;
 }
 
-th > a {
+th > a, td {
   text-decoration: none;
+  padding: 10px;
+}
+
+th > a {
+  display: block;
 }
 
 .currentColumn {
